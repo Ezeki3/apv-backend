@@ -1,11 +1,15 @@
 {
   "name": "apv-backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "practica de js fullstack",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "author": "Ezequiel",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
