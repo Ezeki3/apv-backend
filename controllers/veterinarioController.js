@@ -1,11 +1,11 @@
 
 
 const registrar = (req, res) => {
-  res.send("desde api/veterinarios")
+  res.json( {msg: "Registrando usuario..."})
 };
 
 const perfil = (req, res) => {
-  res.send("desde api/veterinarios/perfil")
+  res.json({msg: "Mostrando Perfil"})
 }
 
 export{
