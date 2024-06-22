@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const veterinarioSchema = mongoose.Schema({
+const VeterinarioSchema = new mongoose.Schema({ 
   nombre:{
     type: String,
     required: true,
@@ -22,7 +22,7 @@ const veterinarioSchema = mongoose.Schema({
     trim: true
   },
   web:{
-    type: true,
+    type: String,
     default: null
   },
   token:{
@@ -34,5 +34,5 @@ const veterinarioSchema = mongoose.Schema({
   }
 });
 
-const Veterinario = mongoose.model("Veterinario", veterinarioSchema);
+const Veterinario = mongoose.model('Veterinario', VeterinarioSchema);
 export default Veterinario;
