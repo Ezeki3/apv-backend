@@ -13,7 +13,7 @@ conectarDB()
 
 app.use("/api/veterinarios", veterinarioRoutes);
 
-app.use("/api/paciente", pacienteRoutes);
+app.use("/api/pacientes", pacienteRoutes);
 
 const PORT = process.env.PORT || 4000;
 
