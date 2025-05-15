@@ -154,7 +154,7 @@ const nuevoPassword = async (req, res) => {
   } catch (error) {
     console.log(error);
   }
-}
+};
 
 const actualizarPerfil = async (req, res) => {
   const veterinario = await Veterinario.findById(req.params.id);
